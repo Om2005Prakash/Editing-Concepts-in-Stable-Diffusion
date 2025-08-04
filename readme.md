@@ -9,9 +9,4 @@ Blue Jay -> Brown Sparrow
 Barbeton Daisy -> Hibiscus
 Sunset -> Afternoon
 
-|               | BarbetonDaisy                          | BlueJay                              | LabradorRetriever                           | Sunset                               |
-|---------------|----------------------------------------|--------------------------------------|---------------------------------------------|--------------------------------------|
-| **BarbetonDaisy**      | ![](BarbetonDaisy/BarbetonDaisy.jpg)   | ![](BarbetonDaisy/BlueJay.jpg)      | ![](BarbetonDaisy/LabradorRetriever.jpg)   | ![](BarbetonDaisy/Sunset.jpg)       |
-| **BlueJay**           | ![](BlueJay/BarbetonDaisy.jpg)         | ![](BlueJay/BlueJay.jpg)            | ![](BlueJay/LabradorRetriever.jpg)         | ![](BlueJay/Sunset.jpg)             |
-| **LabradorRetriever** | ![](LabradorRetriever/BarbetonDaisy.jpg)| ![](LabradorRetriever/BlueJay.jpg)  | ![](LabradorRetriever/LabradorRetriever.jpg)| ![](LabradorRetriever/Sunset.jpg)   |
-| **Sunset**            | ![](Sunset/BarbetonDaisy.jpg)          | ![](Sunset/BlueJay.jpg)             | ![](Sunset/LabradorRetriever.jpg)          | ![](Sunset/Sunset.jpg)              |
+![](result.png)
