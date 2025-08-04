@@ -1,12 +1,21 @@
-As part of \href{https://sites.google.com/view/u-and-me-workshop/}{U&ME challenge by ICCV 2025}, we develope technique for concept unlearning for Stable Diffusion 1.4.
+# U&ME Challenge – Concept Unlearning for Stable Diffusion 1.4
 
-Code will be made public after results are announced.
+This repository contains result of our submission for the [U&ME Challenge at ICCV 2025](https://sites.google.com/view/u-and-me-workshop/), where we address **concept unlearning** in **Stable Diffusion v1.4**.
 
-We demonstrate single concept unlearning result with out method
+> **Note:** The code will be made public after official results are announced (Tentatively Aug 14).
 
-Labrador Retrieve -> Cat
-Blue Jay -> Brown Sparrow
-Barbeton Daisy -> Hibiscus
-Sunset -> Afternoon
+---
 
-![](forget_concept_concept_table.png)
+## 🔄 Example Results
+Below we show the transformation of concepts after applying our unlearning method:
+
+| **Original Concept**       | **Edit Concept** |
+|----------------------------|-----------------------------------|
+| Labrador Retriever         | Cat                              |
+| Blue Jay                   | Brown Sparrow                    |
+| Barbeton Daisy             | Hibiscus                         |
+| Sunset                     | Afternoon                        |
+
+![Concept Unlearning Examples](forget_concept_concept_table.png)
+
+---
