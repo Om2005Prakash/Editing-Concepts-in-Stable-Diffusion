@@ -9,4 +9,4 @@ Blue Jay -> Brown Sparrow
 Barbeton Daisy -> Hibiscus
 Sunset -> Afternoon
 
-![](result.png)
+![](forget_concept_concept_table.png)
