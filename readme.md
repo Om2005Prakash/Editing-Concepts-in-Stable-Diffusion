@@ -82,5 +82,3 @@ The script produces `evaluation_results.csv` which indicates whether LLaVA detec
 * Generated images are placed in the output folder you pass to `inference.py` (default in examples: `./samples`).
 * `llava_eval.py` outputs `evaluation_results.csv` with detection labels used to calculate **forget** and **retain** scores.
 ---
-
-We would like to thank Kaggle for hosting the challenge and providing access to 4*L4 GPU which turned to be very helpful in performing lots of experiments, you guys are the GOAT
