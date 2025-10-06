@@ -2,6 +2,8 @@
 
 This repository contains result of our submission for the [U&ME Challenge at ICCV 2025](https://sites.google.com/view/u-and-me-workshop/), where we address **concept unlearning** in **Stable Diffusion v1.4**. The code implements model-editing techniques to *unlearn* (or replace) a **single** visual concept while preserving the rest of the model.
 
+We would like to thank [Kaggle](https://www.kaggle.com/) for hosting the challenge and providing access to **4×L4 NVIDIA GPUs**, which were incredibly helpful in performing extensive experiments.
+
 ---
 
 ## Quick TL;DR (basic usage)
@@ -78,3 +80,5 @@ The script produces `evaluation_results.csv` which indicates whether LLaVA detec
 * Generated images are placed in the output folder you pass to `inference.py` (default in examples: `./samples`).
 * `llava_eval.py` outputs `evaluation_results.csv` with detection labels used to calculate **forget** and **retain** scores.
 ---
+
+We would like to thank Kaggle for hosting the challenge and providing access to 4*L4 GPU which turned to be very helpful in performing lots of experiments, you guys are the GOAT
