@@ -2,6 +2,8 @@
 
 This repository contains result of our submission for the [U&ME Challenge at ICCV 2025](https://sites.google.com/view/u-and-me-workshop/), where we address **concept unlearning** in **Stable Diffusion v1.4**. The code implements model-editing techniques to *unlearn* (or replace) a **single** visual concept while preserving the rest of the model.
 
+Check out [📄 Report](./Report.pdf) for detailed literature survey, our approach, results, and comparison with other methods.
+
 We would like to thank [Kaggle](https://www.kaggle.com/) for hosting the challenge and providing access to **4×L4 NVIDIA GPUs**, which were incredibly helpful in performing extensive experiments.
 
 ---
