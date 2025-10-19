@@ -336,10 +336,6 @@ for layer in layer_dict:
     del K_0
     del U, S
 
-#Remove those hooks
-for handle in temp:
-    handle.remove()
-
 for layer in layer_dict:
     # K_0K_0T = torch.load(layer_dict[layer]["name"], map_location=torch_device)
     # P = torch.load(layer_dict[layer]["name"] + "P", map_location=torch_device)
@@ -456,7 +452,6 @@ for e in range(config.epochs):
             bias = layer_dict[layer]["bias"].detach()
             
             for step in range(config.descent_per_cycle):
-                optimizer.zero_grad()
 
                 def mod_hook(module, input, output):
                     return z + bias
@@ -465,7 +460,7 @@ for e in range(config.epochs):
 
                 with autocast("cuda"):
                     noise_pred = pass_with_random_state(
-                        text_encoder=text_encoder,
+                        text_encoder=text_encoder_orig,
                         latents=latents,
                         tokens=batch["tokens"],
                         noise=noise,
@@ -475,19 +470,18 @@ for e in range(config.epochs):
 
                 with autocast("cuda"):
                     noise_tar = pass_with_random_state(
-                        text_encoder=text_encoder_orig,
+                        text_encoder=text_encoder,
                         latents=latents,
                         tokens=batch["tokens_tar"],
                         noise=noise,
                         timesteps=timesteps,
-                        hook_handle=None,
+                        hook_handle=hook_handle,
                     )
                 
                 loss = F.mse_loss(noise_pred, noise_tar)
 
                 total_loss += loss.item()
                 scaler.scale(loss).backward()
-                scaler.step(optimizer)
                 scaler.update()
                 print(f"Epoch {e} Step {step} Loss: {loss.item():.6f}")
 
